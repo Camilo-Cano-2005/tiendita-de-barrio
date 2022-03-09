@@ -12,9 +12,9 @@
 
 <body class="bg-light text-dark">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container-fluid">
-        <a class="navbar-brand me-3" href="index.html"><img class="mx-2" src="img/img-1.png" alt="empanadas1" width="80"><strong>Empanadas El Machetico</strong></a>
+        <a class="navbar-brand mx-2" href="index.html"><img src="img/epm2.png" width="100px" alt="epm2"><strong>Empresas Publicas de Medellín</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -46,33 +46,31 @@
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-4 border p-5">
-          <img src="img/img-1.png" class="mb-5 w-100" alt="empanada">
+          <img src="img/epm1.png" class="mb-5 w-100" alt="epm1">
           <form>
-            <label class="form-label">Tipo de empanada</label>
+            <label class="form-label">Estrato</label>
             <select class="form-select mb-4" aria-label="Default select example">
-              <option selected>Empanada de carne</option>
-              <option value="1">Empanada de pollo</option>
-              <option value="2">Empanada de papa</option>
-              <option value="3">Empanada paisa</option>
-              <option value="4">Empanada ranchera</option>
+              <!-- <option selected>Empanada de carne</option> -->
+              <option value="1">Estrato 1</option>
+              <option value="2">Estrato 2</option>
+              <option value="3">Estrato 3</option>
+              <option value="4">Estrato 4</option>
+              <option value="5">Estrato 5</option>
+              <option value="6">Estrato 6</option>
             </select>
-            <div class="mb-3">
-              <label class="form-label">Cantidad</label>
-              <input type="number" class="form-control" id="cantidad" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
-            </div>
             <div class="mb-3">
               <label class="form-label">Documento de identidad</label>
               <input type="number" class="form-control" id="iden" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
+              <label class="form-label">Valor de la deuda</label>
+              <input type="number" class="form-control" id="cedula" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
               <label class="form-label">Correo</label>
               <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
             </div>
-            <button type="submit" class="btn btn-warning w-100"><strong>Enviar</strong></button>
+            <button type="submit" class="btn btn-success w-100"><strong>Enviar</strong></button>
           </form>
         </div>
       </div>
