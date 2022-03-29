@@ -4,21 +4,36 @@ envBoton.addEventListener("click", escuchar);
 
 function escuchar(event) {
     event.preventDefault()
-    console.log("hola");
-    let estracto = document.getElementById("estracto").value;
+    let estrato = document.getElementById("estrato").value;
     let identidad = document.getElementById("iden").value;
     let deuda = document.getElementById("deuda").value;
     let correo = document.getElementById("correo").value;
-    let precio = 0
+    let descuento = 0
+    let canTotal = 0
 
-    if (estracto == "Estracto 1" || estracto == "Estracto 2") {
-        precio = 32321321
-    } else {
-        precio = 300000
+    if (estrato == "Estrato 1") {
+        descuento = 0.4
+        canTotal = deuda - (deuda*descuento)
+    } else if (estrato == "Estrato 2"){
+        descuento = 0.3
+        canTotal = deuda - (deuda*descuento)
+    } else if (estrato == "Estrato 3"){
+        descuento = 0.2
+        canTotal = deuda - (deuda*descuento)
+    } else if (estrato == "Estrato 4"){
+        canTotal = deuda - (deuda*descuento)
+    } else if (estrato == "Estrato 5"){
+        canTotal = deuda - (deuda*descuento)
+    } else if (estrato == "Estrato 6"){
+        canTotal = deuda - (deuda*descuento)
     }
 
-    console.log(estracto);
-    console.log(identidad);
-    console.log(deuda);
-    console.log(correo);
+    console.log("----------------------------------")
+    console.log("Bienvenido al pago de facturas EPM")
+    console.log("Tu estrato es " + estrato);
+    console.log("Tu documento de identidad es " + identidad);
+    console.log("El valor de tu deuda es de " + deuda + " pesos");
+    console.log("Tu correo electronico es " + correo);
+    console.log("El valor total de tu factura es de " + canTotal)
+    console.log("----------------------------------")
 };
